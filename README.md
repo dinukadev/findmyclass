@@ -9,8 +9,14 @@ Example
 
 ClassFinderService finder = new ClassFinderServiceImpl();
 
-//Retrieves all the classes found within the given package
-List<String>classesFound = finder.findClassesByPackage("com.mypackage");
 
-//Retrieves all classes annotated with TestAnnotation which could be on the class/field/method level
-List<String>annotatedClassesFound = finder.findAnnotatedClassesInPackage("com.mypackage",TestAnnotation.class);
+
+Retrieves all the classes found within the given package
+
+List &lt;String&gt;classesFound = finder.findClassesByPackage("com.mypackage");
+
+
+
+Retrieves all classes annotated with TestAnnotation which could be on the class/field/method level
+
+List &lt;String&gt; annotatedClassesFound = finder.findAnnotatedClassesInPackage("com.mypackage",TestAnnotation.class);
